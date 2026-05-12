@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles6.css">
+    <title>Proyecto Software Ke'Dulces</title>
+</head>
+<body>
+    <!-- 1. Menú contenido en un rectángulo -->
+    <header class="header-container">
+        <nav class="nav-bar">
+            <ul class="nav-list">
+                <li><a href="#">¿Quiénes somos?</a></li>
+                <li><a href="portafolio.html">Portafolio</a></li>
+                <li><a href="#">Formulario de registro</a></li>
+                <li><a href="contacto.html">Contáctanos</a></li>
+            </ul>
+        </nav>
+
+        <div class="hero-section">
+            <!-- 2. Logo alineado a la izquierda -->
+            <img src="LOGO KD.jpg" alt="Logo Ke'Dulces" class="logo">
+
+            <!-- 3 y 4. Títulos más arriba y contraste -->
+            <div class="titles-container">
+                <h1 class="main-title">Bienvenidos a Postres y dulces Ke'Dulces</h1>
+                <h2 class="sub-title">¡Los postres de la abuela…más Ke’Dulces…una tradición!</h2>
+            </div>
+
+            <!-- 5. Botón destacado a la derecha -->
+            <div class="cta-container">
+                <a href="portafolio.html" class="btn-catalog">Explorar catálogo</a>
+            </div>
+        </div>
+
+        <img src="https://www.annarecetasfaciles.com/files/arroz-leche-1-scaled.jpg" alt="Imagen principal" class="main-image">
+    </header>
+
+     <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>

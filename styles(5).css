@@ -1,0 +1,254 @@
+
+body {
+    background-image: url('fondo.jpg');
+}
+
+h1, h2 {
+    color: rgba(254, 10, 10, 0.938) !important;
+    text-align: center;
+
+}
+
+.logo {
+    margin-top: 80px;
+    margin-left: 30px;
+    
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: pink
+    
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #ff0000; /* Color rojo */
+    width: 100%;
+    padding: 10px 0;
+}
+
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+    display: flex;
+    justify-content: center; /* Centra los botones horizontalmente */
+}
+
+.nav-list li {
+    margin: 20px 2rem; /* Espacio de 4 'espacios' (2rem es un buen valor) entre los elementos */
+}
+
+.nav-list li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    
+    transition: background-color 0.3s ease; /* Transición suave para el hover */
+}
+
+.nav-list li a:hover {
+    background-color: rgba(226, 152, 186, 0.938); /* Efecto de hover */
+    border-radius: 5px;
+}
+
+/* Estilos generales del footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #f0f0f0;
+    color: #333;
+    font-family: sans-serif;
+    border-top: 1px solid #ddd;
+}
+
+/* Contenedor de la información de contacto a la izquierda */
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.footer-contact h3 {
+    margin-bottom: 10px;
+}
+
+.footer-contact p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+.copyright {
+    margin-top: 15px;
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* Contenedor de los íconos a la derecha */
+.footer-social {
+    display: flex;
+    gap: 20px;
+}
+
+/* Estilos de los íconos (puedes personalizarlos) */
+.social-icon {
+    width: 30px; /* Tamaño del icono */
+    height: 30px;
+    background-color: #555; /* Color de fondo temporal */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white; /* Color del icono */
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* 1. Menú con rectángulo rojo */
+.nav-bar {
+    max-width: 1140px;
+    height: 57px;
+    border: 2px solid rgb(237, 10, 10); /* Cambiar a 'Black' si prefieres negro */
+    border-radius: 15px;
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* 2, 3 y 5. Distribución del Hero Section */
+.hero-section {
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos */
+    justify-content: space-between; /* Distribuye: Logo Izq, Títulos Centro, Botón Der */
+    padding: 20px;
+    margin-top: -10px; /* Acerca los títulos al menú */
+}
+
+.logo {
+    width: 120px; /* Ajusta el tamaño según necesites */
+    height: auto;
+}
+
+.titles-container {
+    text-align: center;
+    flex-grow: 1; /* Hace que el título ocupe el espacio central */
+}
+
+/* 4. Estilo de títulos y contraste */
+.main-title {
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.sub-title {
+    font-size: 1.2rem;
+    color: black; /* Color negro solicitado */
+    font-style: italic;
+    margin-top: 5px;
+}
+
+/* 5. Botón "Explorar catálogo" destacado */
+.btn-catalog {
+    background-color: #e63946; /* Un rojo llamativo */
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.btn-catalog:hover {
+    transform: scale(1.05);
+    background-color: #c1121f;
+}
+
+/* Imagen principal */
+.main-image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    display: block;
+    margin-top: 20px;
+}
+
+/* --- RESPONSIVE DESIGN --- */
+
+@media (max-width: 768px) {
+    /* 1. Ajuste del Menú: Se vuelve vertical para que no se amontone */
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    /* 2. Ajuste del Hero Section: Los elementos se apilan uno sobre otro */
+    .hero-section {
+        flex-direction: column; 
+        text-align: center;
+        gap: 20px;
+    }
+
+    /* 3. El logo se centra en móviles */
+    .logo {
+        margin: 0 auto;
+        width: 100px; /* Un poco más pequeño para ahorrar espacio */
+    }
+
+    /* 4. Títulos: Ajustamos el tamaño de fuente para que no ocupen toda la pantalla */
+    .main-title {
+        font-size: 1.4rem;
+        padding: 0 10px;
+    }
+
+    .sub-title {
+        font-size: 1rem;
+    }
+
+    /* 5. El botón se vuelve más ancho para que sea fácil de pulsar con el pulgar */
+    .btn-catalog {
+        display: inline-block;
+        width: 80%; /* Ocupa casi todo el ancho */
+        padding: 12px;
+    }
+
+    /* 6. La imagen principal se ajusta para no ser tan alta */
+    .main-image {
+        max-height: 250px;
+    }
+}

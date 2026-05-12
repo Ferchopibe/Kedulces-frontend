@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.form-register {
+    width: 400px;
+    background: rgb(224, 169, 102);
+    padding: 55px;
+    margin: auto;
+    margin-top: 200;
+    border: 6px solid red;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+    box-shadow: 7px 13px 37x #000;
+}
+
+.form-register h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: red;
+}
+
+.controls {
+    width: 300px;
+    height: 35px;
+    background: white;
+    padding-left: 1px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    border: 2px solid red;
+    font-family: 'calibri'; 
+    font-size: 18px;
+}
+
+.form-register p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.form-register a {
+    color: red;
+    text-decoration: none;
+}
+
+.form-register a :hover {
+    color: white;
+    text-decoration: underline;
+}
+ 
+.form-register botons {
+    width: 100px;
+    background: #1f53c5;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+}
