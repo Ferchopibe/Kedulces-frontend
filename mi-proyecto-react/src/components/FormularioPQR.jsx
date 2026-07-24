@@ -28,7 +28,7 @@ const FormularioPQR = ({ pedidoId, onExito }) => {
     setError('');
     setEnviando(true);
 
-    // BLINDAJE DE SEGURIDAD (Actividad 3): Validación estricta en el cliente
+    // BLINDAJE DE SEGURIDAD: Validación estricta en el cliente
     if (!formData.motivo || formData.motivo === '') {
       setError('Por favor, selecciona un motivo válido para tu solicitud.');
       setEnviando(false);
@@ -41,15 +41,11 @@ const FormularioPQR = ({ pedidoId, onExito }) => {
       return;
     }
 
-    console.log("Enviando datos reales validados al puerto 4000:", formData);
+    console.log("Enviando datos reales validados a Railway:", formData);
 
     try {
-      // Petición limpia enlazada directamente a tu backend de Node en el puerto 4000
-     
-
-     // ✅ Así debe quedar:
-const response = await fetch('https://ferchopibe-production.up.railway.app/api/pqr',
-
+      // Petición conectada al backend desplegado en Railway
+      const response = await fetch('https://ferchopibe-production.up.railway.app/api/pqr', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
