@@ -24,7 +24,7 @@ const Reclamos = () => {
     setError('');
 
     try {
-      const response = await fetch('http://localhost:4000/api/pqrs', {
+      const response = await fetch('http://https://ferchopibe-production.up.railway.app/api/pqrs', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

@@ -45,7 +45,7 @@ const FormularioPQR = ({ pedidoId, onExito }) => {
 
     try {
       // Petición limpia enlazada directamente a tu backend de Node en el puerto 4000
-      const response = await fetch('http://localhost:4000/api/pqrs', {
+      const response = await fetch('const API_URL = 'const API_URL = 'https://ferchopibe-production.up.railway.app'; {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

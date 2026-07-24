@@ -18,7 +18,7 @@ const Login = () => {
 
         try {
             // Petición HTTP POST al backend blindado
-            const respuesta = await axios.post('http://localhost:4000/api/auth/login', {
+            const respuesta = await axios.post('http://https://ferchopibe-production.up.railway.app/api/auth/login', {
                 email,
                 password
             });

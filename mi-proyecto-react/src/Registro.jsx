@@ -19,7 +19,7 @@ const Registro = () => {
 
         try {
             // Petición HTTP POST enviando los datos para aplicar el Hash en el servidor
-            const respuesta = await axios.post('http://localhost:4000/api/auth/register', {
+            const respuesta = await axios.post('http://https://ferchopibe-production.up.railway.app/api/auth/register', {
                 nombre,
                 email,
                 password
