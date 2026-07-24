@@ -45,7 +45,7 @@ const FormularioPQR = ({ pedidoId, onExito }) => {
 
     try {
       // Petición conectada al backend desplegado en Railway
-      const response = await fetch('https://ferchopibe-production.up.railway.app/api/pqr', {
+      const response = await fetch('https://ferchopibe-production.up.railway.app/api/pqrs', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

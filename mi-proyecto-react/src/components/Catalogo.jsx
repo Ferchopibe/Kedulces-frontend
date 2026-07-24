@@ -10,7 +10,8 @@ function Catalogo() {
 
   // 2. useEffect ejecuta la consulta al API apenas se monta el componente
   useEffect(() => {
-    fetch('http://https://ferchopibe-production.up.railway.app/api/productos')
+  
+    fetch('https://ferchopibe-production.up.railway.app/api/productos')
       .then((response) => response.json())
       .then((data) => {
         setPostres(data);
